@@ -1,0 +1,318 @@
+
+共用体和联合体：
+
+	union test {
+
+		char ch;
+
+		short sh;
+
+		int var;
+	};
+
+	联合体，内部所有成员变量地址一致。等同于整个联合体的地址。
+
+		联合体的大小，是内部成员变量中，最大的那个成员变量的大小。（对齐）
+
+		修改其中任意一个成员变量的值，其他成员变量会随之修改。
+
+枚  举：
+
+	enum  color { 枚举常量 };
+
+	enum  color { red, green, blue, black, pink, yellow };
+
+		 枚举常量: 是整型常量。不能是浮点数。可以是负值。 默认初值从 0 开始，后续常量较前一个常量 +1.
+
+			   可以给任意一个常量赋任意初值。后续常量较前一个常量 +1
+
+-----------------------
+
+读写文件与printf、scanf关联
+
+	printf -- 屏幕 -- 标准输出
+
+	scanf -- 键盘 -- 标准输入
+
+	perror -- 屏幕 -- 标准错误
+
+系统文件：
+
+	标准输入 -- stdin -- 0
+
+	标准输出 -- stdout -- 1
+
+	标准错误 -- stderr -- 2
+
+	应用程序启动时，自动被打开，程序执行结束时，自动被关闭。 ---- 隐式回收。
+
+	1s = 1000ms 
+
+	1ms = 1000us
+
+	1us == 1000ns
+
+文件指针和普通指针区别：
+
+	FILE *fp = NULL;
+
+	借助文件操作函数来改变 fp 为空、野指针的状况。	fopen();  --> 相当于 fp = malloc();
+
+	操作文件， 使用文件读写函数来完成。 fputc、fgetc、fputs、fgets、fread、fwrite
+	
+文件分类：
+
+	设备文件：
+
+		屏幕、键盘、磁盘、网卡、声卡、显卡、扬声器...
+
+	磁盘文件：
+
+		文本文件： 	ASCII
+
+		二进制文件：	0101 二进制编码
+
+文件操作一般步骤：
+
+	1. 打开文件 fopen()  --》 FILE *fp;
+
+	2. 读写文件 fputc、fgetc、fputs、fgets、fread、fwrite
+
+	3. 关闭文件 fclose()  
+
+
+打开、关闭文件函数：
+
+	FILE * fopen(const char * filename, const char * mode);
+
+		参1：待打开文件的文件名（访问路径）
+
+		参2：文件打开权限：
+
+			"r": 只读方式打开文件， 文件不存在，报错。存在，以只读方式打开。
+
+			"w": 只写方式打开文件， 文件不存在，创建一个空文件。文件如果存在，清空并打开。
+
+			"w+":读、写方式打开文件，文件不存在，创建一个空文件。文件如果存在，清空并打开。
+
+			"r+":读、写方式打开文件, 文件不存在，报错。存在，以读写方式打开。
+
+			"a": 以追加的方式打开文件。
+
+			"b": 操作的文件是一个二进制文件（Windows）
+
+		返回值：成功：返回打开文件的文件指针
+
+			失败：NULL
+
+
+	int fclose(FILE * stream);
+
+		参1：打开文件的fp（fopen的返回值）
+
+		返回值：成功 ：0， 失败： -1;
+
+文件访问路径：
+
+	绝对路径：
+
+		从系统磁盘的 根盘符开始，找到待访问的文件路径
+
+		Windows书写方法：
+
+			1）C:\\Users\\afei\\Desktop\\06-文件分类.avi
+
+			2）C:/Users/afei/Desktop/06-文件分类.avi  --- 也使用于Linux。
+
+	相对路径：
+
+		1）如果在VS环境下，编译执行（Ctrl+F5），文件相对路径是指相对于 day10.vcxproj 所在目录位置。
+
+		2）如果是双击 xxx.exe 文件执行，文件的相对路径是相对于 xxx.exe 所在目录位置。 
+
+		
+按字符写文件 fputc:
+
+	int fputc(int ch, FILE * stream);
+
+		参1：待写入的 字符
+
+		参2：打开文件的fp（fopen的返回值）
+
+		返回值： 成功： 写入文件中的字符对应的ASCII码
+
+			 失败： -1
+
+
+	练习：写26个英文字符到文件中。
+
+
+按字符读文件 fgetc
+
+	int fgetc(FILE * stream);
+
+		参1：待读取的文件fp（fopen的返回值）
+
+		返回值： 成功：读到的字符对应的ASCII码
+
+			 失败： -1
+
+	文本文件的结束标记： EOF ---》 -1 
+	
+	
+feof()函数：
+
+	int feof(FILE * stream);
+
+		参1： fopen的返回值
+
+		返回值： 到达文件结尾--》非0【真】
+				
+			 没到达文件结尾--》0【假】
+
+	作用：	
+		用来判断到达文件结尾。 既可以判断文本文件。也可以判断 二进制文件。
+
+	特性：
+
+		要想使用feof()检测文件结束标记，必须在该函数调用之前，使用读文件函数。
+
+		feof()调用之前，必须有读文件函数调用。
+
+fgets()函数：
+	
+	获取一个字符串， 以\n作为结束标记。自动添加 \0. 空间足够大 读\n, 空间不足舍弃\n, 必须有\0。
+
+	char * fgets(char * str, int size, FILE * stream);
+
+		char buf[10];  	hello --> hello\n\0
+
+		返回值： 成功： 读到的字符串
+
+			 失败： NULL
+
+fputs()函数：
+
+	写出一个字符串，如果字符串中没有\n， 不会写\n。
+
+	int fputs(const char * str, FILE * stream);
+
+		返回值： 成功： 0
+
+			 失败： -1
+
+
+练习： 获取用户键盘输入，写入文件。
+
+	假定：用户写入“:wq”终止接收用户输入，将之前的数据保存成一个文件。
+
+	FILE *fp = fopen("test07.txt", "w");
+	if (fp == NULL)
+	{
+		perror("fopen error");
+		return -1;
+	}
+	char buf[4096] = {0};
+
+	while (1)
+	{
+		fgets(buf, 4096, stdin);
+		if (strcmp(buf, ":wq\n") == 0)	 // 实际 fgets 读到的是“:wq\n”
+		{
+			break;
+		}
+		fputs(buf, fp);
+	}
+
+	fclose(fp);
+
+
+练习： 文件版四则运算：
+
+
+	1. 封装 write_file 函数，将4则运算表达式写入。
+
+		FILE * fp = fopen（"w"）;
+
+		fputs("10/4=\n", fp);
+
+		fputs("10+4=\n", fp);
+		....
+
+		fputs("10*4=\n", fp);
+
+	2. 封装 read_file 函数, 将4则运算表达式读出，拆分，运算，写回。
+
+		1） 读出：
+
+			FILE * fp = fopen（"r"）;
+
+			while （1） {
+
+				fgets(buf, sizeof(buf), fp);	// buf中存储的 4则运算表达式
+			}
+
+		2） 拆分：
+
+			sscanf(buf, "%d%c%c=\n", &a, &ch, &b);	// 得到运算数， 运算符
+
+		3） 根据运算符，得到运算结果
+
+			switch(ch) {
+
+				case '+':
+					a+b;
+			}
+
+		4) 拼接 结果到  运算式 上
+
+			char result[1024];
+
+			sprintf(reuslt, "%d%c%d=%d\n", a, ch, b, a+b);		// reuslt 中包含带有结果的 运算式。
+
+		5）将 多个带有结果的运算 拼接成一个字符串。
+
+			char sum_ses[4096];	// 存总的字符串  -- "10/2=5\n10*3=30\n4+3=7\n8-6=2\n"
+
+			strcat(sum_ses，reuslt);  // 在while中循环拼接
+
+		6) 重新打开文件， 清空原有 4则运算表达式
+
+			fclose(fp);
+
+			fp = fopen（"w"）;
+
+		7) 将 拼接成一个字符串。写入到空的文件中
+
+			fputs（sum_res）;
+
+		
+
+10/2=	fgets(buf, 4096, 文件fp) --->"10/2=\n" --> 10   /   2   sscanf(buf, "%d%c%d=\n", &a, &c, &b);  -> a=10, b=2, c='/'
+10*3=
+4+3=
+8-6=
+		switch (c) {
+
+			case '/':
+
+				a / b;
+				break;
+
+			case '+':
+				a + b;
+
+				break;
+
+			....
+		}
+
+		fopen("", "w");
+
+		char result[];   sprintf()/strcat()  --> "10/2=5\n10*3=30\n4+3=7\n8-6=2\n"  --> fputs(result, fp)
+=====>
+
+10/2=5
+10*3=30
+4+3=7
+8-6=2

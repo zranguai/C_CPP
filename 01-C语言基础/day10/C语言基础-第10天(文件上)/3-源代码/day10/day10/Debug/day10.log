@@ -1,0 +1,5 @@
+﻿  08-文件版4则运算.c
+c:\users\afei\desktop\tttttt\day10\day10\08-文件版4则运算.c(52): warning C4101: “ret”: 未引用的局部变量
+c:\users\afei\desktop\tttttt\day10\day10\08-文件版4则运算.c(43): warning C4715: “calc”: 不是所有的控件路径都返回值
+  day10.vcxproj -> C:\Users\afei\Desktop\TTTTTT\day10\Debug\day10.exe
+  day10.vcxproj -> C:\Users\afei\Desktop\TTTTTT\day10\Debug\day10.pdb (Partial PDB)

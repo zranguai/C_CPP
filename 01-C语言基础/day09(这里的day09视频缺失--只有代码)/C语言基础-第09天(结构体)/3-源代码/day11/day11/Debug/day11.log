@@ -1,0 +1,7 @@
+﻿  01-sprintf 和 sscanf.c
+c:\users\afei\desktop\tttttt\day11\day11\01-sprintf 和 sscanf.c(14): warning C4098: “write_file”:“void”函数返回值
+c:\users\afei\desktop\tttttt\day11\day11\01-sprintf 和 sscanf.c(32): warning C4098: “read_file”:“void”函数返回值
+c:\users\afei\desktop\tttttt\day11\day11\01-sprintf 和 sscanf.c(60): warning C4098: “read_file2”:“void”函数返回值
+c:\users\afei\desktop\tttttt\day11\day11\01-sprintf 和 sscanf.c(81): warning C4098: “read_file3”:“void”函数返回值
+  day11.vcxproj -> C:\Users\afei\Desktop\TTTTTT\day11\Debug\day11.exe
+  day11.vcxproj -> C:\Users\afei\Desktop\TTTTTT\day11\Debug\day11.pdb (Partial PDB)

@@ -1,0 +1,3 @@
+﻿  03 栈的生长方向和内存存放方向.c
+e:\0628\sendtostudent\day2_c\code\01 宏函数\03 栈的生长方向和内存存放方向\03 栈的生长方向和内存存放方向.c(27): warning C4133: “初始化”: 从“int *”到“char *”的类型不兼容
+  03 栈的生长方向和内存存放方向.vcxproj -> E:\0628\sendToStudent\Day2_C\Code\01 宏函数\Debug\03 栈的生长方向和内存存放方向.exe

@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01 设计一个类，求圆的周长", "01 设计一个类，求圆的周长\01 设计一个类，求圆的周长.vcxproj", "{0B13C619-95C5-4D08-8A10-CF9678523689}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02 内联函数引出-宏缺陷", "02 内联函数引出-宏缺陷\02 内联函数引出-宏缺陷.vcxproj", "{9EAB41DF-B350-4B1B-B767-84B0677AC5EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03 函数的默认参数和占位参数", "03 函数的默认参数和占位参数\03 函数的默认参数和占位参数.vcxproj", "{15B2443E-9859-4C79-AF12-A90193FAB72B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "04 函数重载", "04 函数重载\04 函数重载.vcxproj", "{BAC82334-7412-4B63-A413-CF11A1332D20}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05 externC浅析", "05 externC浅析\05 externC浅析.vcxproj", "{4F3EBAC8-A227-4C1A-A0BC-B3B0D37A5F14}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06 C语言下的封装", "06 C语言下的封装\06 C语言下的封装.vcxproj", "{A43219A1-31D6-410C-8F8D-00CAF6CA6C8F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07 C++语言下的封装", "07 C++语言下的封装\07 C++语言下的封装.vcxproj", "{E1B48D87-F840-4065-85B9-2D47478EDDCE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "08 尽量将成员属性设置为私有", "08 尽量将成员属性设置为私有\08 尽量将成员属性设置为私有.vcxproj", "{B08AFEA7-179E-4DBB-84AE-40772067893A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B13C619-95C5-4D08-8A10-CF9678523689}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0B13C619-95C5-4D08-8A10-CF9678523689}.Debug|Win32.Build.0 = Debug|Win32
+		{0B13C619-95C5-4D08-8A10-CF9678523689}.Release|Win32.ActiveCfg = Release|Win32
+		{0B13C619-95C5-4D08-8A10-CF9678523689}.Release|Win32.Build.0 = Release|Win32
+		{9EAB41DF-B350-4B1B-B767-84B0677AC5EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9EAB41DF-B350-4B1B-B767-84B0677AC5EC}.Debug|Win32.Build.0 = Debug|Win32
+		{9EAB41DF-B350-4B1B-B767-84B0677AC5EC}.Release|Win32.ActiveCfg = Release|Win32
+		{9EAB41DF-B350-4B1B-B767-84B0677AC5EC}.Release|Win32.Build.0 = Release|Win32
+		{15B2443E-9859-4C79-AF12-A90193FAB72B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{15B2443E-9859-4C79-AF12-A90193FAB72B}.Debug|Win32.Build.0 = Debug|Win32
+		{15B2443E-9859-4C79-AF12-A90193FAB72B}.Release|Win32.ActiveCfg = Release|Win32
+		{15B2443E-9859-4C79-AF12-A90193FAB72B}.Release|Win32.Build.0 = Release|Win32
+		{BAC82334-7412-4B63-A413-CF11A1332D20}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BAC82334-7412-4B63-A413-CF11A1332D20}.Debug|Win32.Build.0 = Debug|Win32
+		{BAC82334-7412-4B63-A413-CF11A1332D20}.Release|Win32.ActiveCfg = Release|Win32
+		{BAC82334-7412-4B63-A413-CF11A1332D20}.Release|Win32.Build.0 = Release|Win32
+		{4F3EBAC8-A227-4C1A-A0BC-B3B0D37A5F14}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4F3EBAC8-A227-4C1A-A0BC-B3B0D37A5F14}.Debug|Win32.Build.0 = Debug|Win32
+		{4F3EBAC8-A227-4C1A-A0BC-B3B0D37A5F14}.Release|Win32.ActiveCfg = Release|Win32
+		{4F3EBAC8-A227-4C1A-A0BC-B3B0D37A5F14}.Release|Win32.Build.0 = Release|Win32
+		{A43219A1-31D6-410C-8F8D-00CAF6CA6C8F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A43219A1-31D6-410C-8F8D-00CAF6CA6C8F}.Debug|Win32.Build.0 = Debug|Win32
+		{A43219A1-31D6-410C-8F8D-00CAF6CA6C8F}.Release|Win32.ActiveCfg = Release|Win32
+		{A43219A1-31D6-410C-8F8D-00CAF6CA6C8F}.Release|Win32.Build.0 = Release|Win32
+		{E1B48D87-F840-4065-85B9-2D47478EDDCE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{E1B48D87-F840-4065-85B9-2D47478EDDCE}.Debug|Win32.Build.0 = Debug|Win32
+		{E1B48D87-F840-4065-85B9-2D47478EDDCE}.Release|Win32.ActiveCfg = Release|Win32
+		{E1B48D87-F840-4065-85B9-2D47478EDDCE}.Release|Win32.Build.0 = Release|Win32
+		{B08AFEA7-179E-4DBB-84AE-40772067893A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B08AFEA7-179E-4DBB-84AE-40772067893A}.Debug|Win32.Build.0 = Debug|Win32
+		{B08AFEA7-179E-4DBB-84AE-40772067893A}.Release|Win32.ActiveCfg = Release|Win32
+		{B08AFEA7-179E-4DBB-84AE-40772067893A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

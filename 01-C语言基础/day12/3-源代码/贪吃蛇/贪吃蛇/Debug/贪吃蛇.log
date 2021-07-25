@@ -1,0 +1,6 @@
+﻿  main.c
+c:\users\afei\desktop\tttttt\贪吃蛇\贪吃蛇\main.c(13): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+c:\users\afei\desktop\tttttt\贪吃蛇\贪吃蛇\main.c(91): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\afei\desktop\tttttt\贪吃蛇\贪吃蛇\main.c(151): warning C4018: “<”: 有符号/无符号不匹配
+  贪吃蛇.vcxproj -> C:\Users\afei\Desktop\TTTTTT\贪吃蛇\Debug\贪吃蛇.exe
+  贪吃蛇.vcxproj -> C:\Users\afei\Desktop\TTTTTT\贪吃蛇\Debug\贪吃蛇.pdb (Partial PDB)

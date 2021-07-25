@@ -1,0 +1,14 @@
+QT       += core gui      //Qt包含的模块
+
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets    //大于4版本  加入 widgets   模块 
+
+TARGET = 01_QtFirst   //生成.exe程序的名称
+TEMPLATE = app        //模板 应用程序模板
+
+
+SOURCES += main.cpp\   //源文件
+        mywidget.cpp
+	
+
+HEADERS  += mywidget.h  //头文件
+	

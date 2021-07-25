@@ -1,0 +1,9 @@
+﻿  01 typedef使用.c
+e:\0628\sendtostudent\day1_c\code\01 typedef使用\01 typedef使用\01 typedef使用.c(32): warning C4101: “p2”: 未引用的局部变量
+e:\0628\sendtostudent\day1_c\code\01 typedef使用\01 typedef使用\01 typedef使用.c(32): warning C4101: “p1”: 未引用的局部变量
+  test.cpp
+e:\0628\sendtostudent\day1_c\code\01 typedef使用\01 typedef使用\test.cpp(1): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+          命令行参数: 参见前面的“_CRT_SECURE_NO_WARNINGS”定义
+e:\0628\sendtostudent\day1_c\code\01 typedef使用\01 typedef使用\test.cpp(8): warning C4101: “p2”: 未引用的局部变量
+e:\0628\sendtostudent\day1_c\code\01 typedef使用\01 typedef使用\test.cpp(8): warning C4101: “p1”: 未引用的局部变量
+  01 typedef使用.vcxproj -> E:\0628\sendToStudent\Day1_C\Code\01 typedef使用\Debug\01 typedef使用.exe

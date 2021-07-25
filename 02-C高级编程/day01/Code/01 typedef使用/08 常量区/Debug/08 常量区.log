@@ -1,0 +1,4 @@
+﻿  08 常量区.c
+e:\0628\sendtostudent\day1_c\code\01 typedef使用\08 常量区\08 常量区.c(13): warning C4090: “初始化”: 不同的“const”限定符
+e:\0628\sendtostudent\day1_c\code\01 typedef使用\08 常量区\08 常量区.c(25): warning C4090: “初始化”: 不同的“const”限定符
+  08 常量区.vcxproj -> E:\0628\sendToStudent\Day1_C\Code\01 typedef使用\Debug\08 常量区.exe

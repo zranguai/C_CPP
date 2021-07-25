@@ -1,0 +1,16 @@
+配置文件“E:\VMware\Centos7-Oracle\CentOS 7.vmx”是由 VMware 产品创建，但该产品与此版 VMware Workstation 不兼容，因此无法使用。
+
+ 情况二：如果现有环境没有VMware Workstation 11.0，可以通过下面的步骤快速完成硬件号的兼容转换
+
+1.找到并通过记事本程序打开虚拟机的.vmx文件；
+
+2.找到文件中的virtualHW.version = "11"字段，修改该字段为virtualHW.version = "10"；
+
+3.保存.vmx文件，并开启虚拟机。VMware Workstation 11.0的虚拟机可以在VMware Workstation 10.0的环境下运行。
+
+
+虚拟机设置-》选项-》常规：客户机操作系统选择Linux->CentOS 64位。
+
+
+oracle账户登录：
+	桌面右键-》更改桌面背景-》选择区域和语言-》右侧选择语言-》重启

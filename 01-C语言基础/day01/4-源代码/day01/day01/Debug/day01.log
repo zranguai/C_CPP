@@ -1,0 +1,5 @@
+﻿  加法运算.c
+c:\users\afei\desktop\tttttt\day01\day01\加法运算.c(17): warning C4474: printf: 格式字符串中传递的参数太多
+  c:\users\afei\desktop\tttttt\day01\day01\加法运算.c(17): note: 占位符和其参数预计 2 可变参数，但提供的却是 3 参数
+  day01.vcxproj -> C:\Users\afei\Desktop\TTTTTT\day01\Debug\day01.exe
+  day01.vcxproj -> C:\Users\afei\Desktop\TTTTTT\day01\Debug\day01.pdb (Partial PDB)

@@ -1,0 +1,6 @@
+﻿  11-二级指针malloc空间.c
+  10-申请堆空间.c
+c:\users\afei\desktop\tttttt\day08\day08\10-申请堆空间.c(18): warning C4133: “初始化”: 从“int *”到“char *”的类型不兼容
+  正在生成代码...
+  day08.vcxproj -> C:\Users\afei\Desktop\TTTTTT\day08\Debug\day08.exe
+  day08.vcxproj -> C:\Users\afei\Desktop\TTTTTT\day08\Debug\day08.pdb (Partial PDB)

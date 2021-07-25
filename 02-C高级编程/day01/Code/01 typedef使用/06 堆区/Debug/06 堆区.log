@@ -1,0 +1,4 @@
+﻿  06 堆区.c
+e:\0628\sendtostudent\day1_c\code\01 typedef使用\06 堆区\06 堆区.c(11): warning C4033: “getSpace”必须返回值
+e:\0628\sendtostudent\day1_c\code\01 typedef使用\06 堆区\06 堆区.c(18): warning C4715: “getSpace”: 不是所有的控件路径都返回值
+  06 堆区.vcxproj -> E:\0628\sendToStudent\Day1_C\Code\01 typedef使用\Debug\06 堆区.exe
